@@ -1,12 +1,12 @@
 # Portfolio Part 1: Component Brainstorming
 
-- **Name**: <!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
-- **Dot Number**: <!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
-- **Due Date**: <!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
+- **Name**: Jin Yang<!-- TODO: fill with first and last name (e.g., Brutus Buckeye) then delete this comment -->
+- **Dot Number**: yang.6893<!-- TODO: fill with OSU dot number (e.g., buckeye.17) then delete this comment -->
+- **Due Date**: 9/16 @3:00 PM EST<!-- TODO: fill with due date and time (e.g., 10/17 @ 3:10 PM EST) then delete this comment -->
 
 ## Assignment Overview
 
-<!-- TODO: read the assignment overview then delete this comment -->
+
 
 The overall goal of the portfolio project is to have you design and implement
 your own OSU component. There are no limits to what you choose to design and
@@ -29,7 +29,7 @@ implement.
 
 ## Assignment Checklist
 
-<!-- TODO: browse the checklist then delete this comment -->
+
 
 To be sure you have completed everything on this assignment, we have littered
 this document with TODO comments. You can browse all of them in VSCode by
@@ -52,7 +52,7 @@ to the tree diagram (you may remove this one as well):
 
 ## Assignment Learning Objectives
 
-<!-- TODO: read the assignment learning objectives then delete this comment -->
+
 
 Without learning objectives, there really is no clear reason why a particular
 assessment or activity exists. Therefore, to be completely transparent, here is
@@ -67,7 +67,7 @@ project. Specifically, students should be able to:
 
 ## Assignment Rubric: 10 Points
 
-<!-- TODO: read the assignment rubric then delete this comment -->
+
 
 Again, to be completely transparent, most of the portfolio project, except the
 final submission, is designed as a formative assessment. Formative assessments
@@ -98,15 +98,15 @@ do good work.
 > brainstorming. Plus it helps us get to know you better! Feel free to share
 > images in this section.
 
-<!-- TODO: briefly talk about your interests then delete this comment.
-Also, protip: you can preview what your response looks like by hitting
-the magnifying glass icon in the upper-right corner or pressing CTRL+K and
-then V. This kind of button combination is called a chord, for whatever
-reason -->
+
+
+Growing up, music has been a huge part of my life. As a kid, I was enrolled in piano and guitar lessons and an avid dancer. Whether it was playing music, dancing to my favorite songs or simply just listening to whatever was on the radio, music has been a constant part of my life. As a part of my daily routine, the first thing I do is put in my airpods and play my daylist on spotify.
+
+When deciding to major in computer science and engineering, I was not sure what my career path would be, but I knew the possiblies were endless. I hope whatever I do end up pursuing, I am making a positive impact in society or someone's life regardless of the strength of the impact. When applying to colleges senior year, I came across personalized learning when looking into a list of engineering problems. The topic interested me as I struggled in my early years of school since I did not speak English. Although I am unsure of which industry I may go into with my degree, I would love to explore and contribute to personalized learning with technology.
 
 ## Assignment
 
-<!-- TODO: read the assignment section then delete this comment -->
+
 
 As previously stated, you are tasked with brainstorming 3 possible components.
 To aid you in this process, we have provided [some example components][example-components]
@@ -114,7 +114,7 @@ that may help you in your brainstorming. All of these components were made at
 some point by one of your peers, so you should feel confident that you can
 accomplish any of them.
 
-<!-- TODO: browse the list of possible projects then delete this comment -->
+
 
 There is no requirement that you use any of the components listed above.
 If you want to model something else, go for it! Very common early object
@@ -124,7 +124,7 @@ you're just brainstorming right now. You do not have to commit to anything.
 
 ### Example Component
 
-<!-- TODO: review this example component then delete this comment -->
+
 
 To help you brainstorm a few components, we've provided an example below of a
 component you already know well: NaturalNumber. We highly recommend that you
@@ -192,70 +192,82 @@ will likely refine your design to make your implementation easier to use.
 
 > Please use this section to share your designs.
 
-- Component Design #1: <!-- TODO: give component a name then delete this comment -->
+- Component Design #1: MusicPlaylist
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - MusicPlaylist will model a playlist of songs and have features similar to ones found on many music streaming platforms. The simple kernel methods would provide basic functions one would want to do with thier playlist. Then layered on top would be more complex functions that enhance one's listening experience.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void add(song)' : adds 'song' to 'this'
+    - 'song remove(song)' : removes and returns 'song' from 'this'
+    - 'boolean isEmpty()' : reports if 'this' is empty
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - 'void shuffle()' : rearranges the order of 'this'
+    - 'song removeAny()' : removes a song from 'this'
+    - 'String artist(song)' : returns the 'artist' of 'song'
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the playlist would be mutable with many of the methods listed above by adding or removing songs
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I am not completely sure as I think this component would build off of maps
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I do not think so
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the kernel methods provide a good foundation for most of the secondary methods. For example, removeAny() would build off of remove() with a random input.
 
 
-- Component Design #2: <!-- TODO: give component a name then delete this comment -->
+- Component Design #2: ShoppingCart
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - ShoppingCart will model a shopping cart that one would find on an only shopping site. The simple kernel methods would provide basic functions one would expect when manipulating their shopping cart that would improve their shopping experience. The secondary methods would include functions that may not be necessary, but enhance one's shopping experience.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void add(item)' : adds 'item' to 'this'
+    - 'item remove(item)' : removes and returns 'item' from 'this'
+    - 'boolean isEmpty()' : reports if 'this' is empty
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - 'void increase(item, int)' : adds the number of 'item' in 'this'
+    - 'void decrease(item, int); : removes the number of 'item' in 'this
+    - 'int inventory(item)' : reports the number of 'item' in 'this'
+    - 'int totalItem()' : reports the total number of all 'item' in 'this'
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the shopping cart would be mutable with many of the methods listed above by adding or removing items
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I am not completely sure as I think this component would build off of queues
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I do not think so
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the kernel methods provides a good foundation for most of the methods like for increase() and decrease() would loop the funtions add() and remove() until it reaches the desired amount.
 
-
-- Component Design #3: <!-- TODO: give component a name then delete this comment -->
+- Component Design #3: library
   - **Description**:
-    - <!-- TODO: describe your component then delete this comment -->
+    - Library will model an actual library with books. The simple kernel methods would allow clients to perform the basic functions of a library. The secondary methods would include more complex functions that would enhance one's reading experience.
   - **Kernel Methods**:
-    - <!-- TODO: list kernel methods then delete this comment -->
+    - 'void return(book)' : adds 'book' to 'this'
+    - 'book checkout(book)' : removes and reports 'book' from 'this'
+    - 'boolean isEmpty()': reports if 'this' is empty
   - **Secondary Methods**:
-    - <!-- TODO: list secondary methods then delete this comment -->
+    - 'void alphabetize()' : updates the order of 'this'
+    - 'book surprise()' : returns a random book from 'this'
+    - 'queue<book> checkoutMany(queue<book>)' : returns a queue of books from 'this'
   - **Additional Considerations** (*note*: "I don't know" is an acceptable
     answer for each of the following questions):
     - Would this component be mutable? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the library would be mutable with many of the methods listed above by adding or removing books
     - Would this component rely on any internal classes (e.g., `Map.Pair`)?
       Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I am not completely sure as I think this component would build off of queues
     - Would this component need any enums or constants (e.g.,
       `Program.Instruction`)? Answer and explain:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - I do not think so
     - Can you implement your secondary methods using your kernel methods?
       Answer, explain, and give at least one example:
-      - <!-- TODO: provide an argument then delete this comment -->
+      - yes, the kernel methods provide a good foundation for the secondary methods. For example, the method return(book) would be used to create the returning queue for checkoutMany()
 
 ## Post-Assignment
 
@@ -264,7 +276,6 @@ completed the assignment.
 
 ### Changelog
 
-<!-- TODO: create CHANGELOG then delete this comment -->
 
 At the end of every assignment, you should update the
 [CHANGELOG.md](../../CHANGELOG.md) file found in the root of the project folder.
@@ -303,7 +314,6 @@ of development.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 If you have completed the assignment using this template, we recommend that
 you convert it to a PDF before submission. If you're not sure how, check out
