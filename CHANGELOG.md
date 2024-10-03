@@ -13,3 +13,10 @@ the following form: YYYY.0M.0D.
 - Designed a musicPlaylist component
 - Designed a shoppingCart component
 - Designed a library component
+
+## 2024.10.03
+
+### Added
+
+- Designed a proof of concept for MusicPlaylist component
+
