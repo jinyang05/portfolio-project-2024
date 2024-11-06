@@ -7,19 +7,9 @@ public interface MusicPlaylist extends MusicPlaylistKernel {
      * Shuffles the order of {@code this}.
      *
      * @updates this
-     * @ensure |this| = |#this|
+     * @ensures |this| = |#this|
      */
     void shuffle();
-
-    /**
-     * Removes an arbitary song from {@code this}.
-     *
-     * @updates this
-     * @ensures |this| = |#this| - 1
-     * @requires |this| > 0
-     * @return the song removed
-     */
-    String removeAny();
 
     /**
      * Reports the artist value of {@code song}.
@@ -30,4 +20,15 @@ public interface MusicPlaylist extends MusicPlaylistKernel {
      * @return the artist of the song
      */
     String artist(String song);
+
+    /**
+     * Returns the next song in the queue
+     *
+     * @ensures |this| = |#this|
+     * @requires |this| > 0
+     * @return the song that will be played next
+     */
+    String upNext();
+
+
 }
