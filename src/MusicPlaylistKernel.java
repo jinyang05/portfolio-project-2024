@@ -28,7 +28,7 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
      * @requires |this| > 0 and song is in DOMAIN (this)
      * @return the song and artist removed
      */
-    Map<String, String> remove(String song);
+    Map.Pair<String, String> remove(String song);
 
     /**
      * Reports whether {@code this} is empty.
@@ -39,20 +39,20 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
     boolean isEmpty();
 
     /**
-     *  Removes an arbitrary song from {@code this}.
+     * Removes an arbitrary song from {@code this}.
      *
-     *  @updates this
-     *  @ensures |this| = |#this| - 1
-     *  @requires |this| > 0
-     *  @return the artist and song removed
+     * @updates this
+     * @ensures |this| = |#this| - 1
+     * @requires |this| > 0
+     * @return the artist and song removed
      */
-    Map<String, String> removeAny();
+    Map.Pair<String, String> removeAny();
 
     /**
      * Reports whether {@code song} is in {@code this}.
      *
      * @param song
-     *          the {@code song} that is being checked
+     *            the {@code song} that is being checked
      * @return trur iff {@code song} is in {@code this}
      */
     boolean contains(String song);
