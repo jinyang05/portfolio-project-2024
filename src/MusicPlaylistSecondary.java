@@ -15,7 +15,6 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         String artist = removed.key();
         this.add(removed.value(), removed.key());
         return artist;
-
     };
 
     String upNext() {
@@ -23,7 +22,6 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         String song = removed.value();
         this.add(removed.value(), removed.key());
         return song;
-
     };
 
 }
