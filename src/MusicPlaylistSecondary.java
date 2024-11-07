@@ -5,11 +5,13 @@ import components.map.Map;
  */
 public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
+    @Override
     void shuffle() {
         Map.Pair<String, String> removed = this.removeAny();
         this.add(removed.value(), removed.key());
     };
 
+    @Override
     String artist(String song) {
         Map.Pair<String, String> removed = this.remove(song);
         String artist = removed.key();
@@ -17,6 +19,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         return artist;
     };
 
+    @Override
     String upNext() {
         Map.Pair<String, String> removed = this.removeAny();
         String song = removed.value();
