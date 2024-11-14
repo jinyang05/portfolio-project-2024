@@ -29,7 +29,8 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
 
     @Override
     public final String toString() {
-        throw new Exception("toString() can not be implemented");
+        throw new UnsupportedOperationException(
+                "toString() can not be implemented");
     };
 
     @Override
@@ -50,9 +51,7 @@ public abstract class MusicPlaylistSecondary implements MusicPlaylist {
         if (this.size() != underTest.size()) {
             return false;
         }
-
         //MusicPlaylist temp = this.newInstance();
-
         if (this.size() == underTest.size() && !this.isEmpty()) {
             // remove elements until empty
             while (!underTest.isEmpty()) {
