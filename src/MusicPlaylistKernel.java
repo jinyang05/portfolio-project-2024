@@ -56,4 +56,13 @@ public interface MusicPlaylistKernel extends Standard<MusicPlaylist> {
      * @return trur iff {@code song} is in {@code this}
      */
     boolean contains(String song);
+
+    /**
+     * Reports size of {@code this}.
+     *
+     * @return the size of {@code this}.
+     * @ensures |this| = @return
+     */
+    int size();
+
 }
