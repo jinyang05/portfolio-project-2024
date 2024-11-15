@@ -110,7 +110,7 @@ do good work.
 > discuss how that representation will be restricted (i.e., by convention)
 > and interpreted (i.e., by correspondence).
 
-<!-- TODO: select a representation and explain why -->
+
 > My choice of representation is a Queue of Map.Pair. A Queue would allow for order, which a musicPlaylist has and would be an easy datastructure to work with that would allow for easy removing and adding. The Queue is filled with the type Map.Pair, which was the best type to store songs with their artists. By keeping the artist and songs together using Map.Pair, it allowed more functions and helped implement methods like shuffle better since the two are always connected.
 
 > To start making your kernel implementation, make a branch off of main in your
@@ -188,7 +188,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull

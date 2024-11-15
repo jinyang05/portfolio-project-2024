@@ -1,5 +1,7 @@
 
+import components.map.Map;
 import components.map.Map.Pair;
+import components.map.Map1L;
 import components.queue.Queue1L;
 
 /**
@@ -39,14 +41,18 @@ public class MusicPlaylist1 extends MusicPlaylistSecondary {
 
     @Override
     public final void add(String song, String artist) {
-        Pair<String, String> add = new Pair<>(song, artist);
+        Map<String, String> temp = new Map1L<>();
+        temp.add(song, artist);
+        Pair<String, String> add = temp.remove(song);
         this.rep.enqueue(add);
 
     }
 
     @Override
     public final Pair<String, String> remove(String song) {
-        Pair<String, String> remove = new Pair<String, String>();
+        Map<String, String> temp = new Map1L<>();
+        temp.add(song, "N/A");
+        Pair<String, String> remove = temp.remove(song);
         for (int i = 0; i < this.rep.length(); i++) {
             Pair<String, String> x = this.rep.dequeue();
             if (!x.key().equals(song)) {
@@ -94,13 +100,18 @@ public class MusicPlaylist1 extends MusicPlaylistSecondary {
 
     @Override
     public final MusicPlaylist newInstance() {
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'newInstance'");
+        try {
+            return this.getClass().getConstructor().newInstance();
+        } catch (ReflectiveOperationException e) {
+            throw new AssertionError(
+                    "Cannot construct object of type " + this.getClass());
+        }
     }
 
     @Override
-    public final void transferFrom(MusicPlaylist arg0) {
-        throw new UnsupportedOperationException(
-                "Unimplemented method 'transferFrom'");
+    public final void transferFrom(MusicPlaylist source) {
+        MusicPlaylist1 localSource = (MusicPlaylist1) source;
+        this.rep = localSource.rep;
+        localSource.createNewRep();
     }
 }
