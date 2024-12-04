@@ -1,3 +1,5 @@
+package components.MusicPlaylist;
+
 import components.map.Map;
 
 /**
