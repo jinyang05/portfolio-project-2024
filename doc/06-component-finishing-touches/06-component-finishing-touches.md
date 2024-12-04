@@ -296,18 +296,35 @@ Take some time to fill them out honestly.
 > complete the portfolio project, how much better (or worse) do you think you
 > understand software development and why?
 
-<!-- TODO: discuss -->
+This project has definitely shown me how I can utilize the skills I have gained
+in the software sequence and apply them to real-world problems and/or create
+solutions to personal problems. Having free-range to create unique concepts and
+trouble-shoot the bugs was a great opprotunity to stregthen my problem-solving
+skills since I was finding solutions to problems that were unique to my
+projects.Overall this project has strengthen my understanding of software
+development as I was applying what I learned through lectures and projects from
+class.
 
 > Also, did the portfolio project surface any gaps in your own knowledge of
 > software development. If so, what are those gaps and how did you address them?
 
-<!-- TODO: discuss -->
+Since the project did not have any layouts or pre-made templates, I had to start
+from scratch for every assignment. This made me realize how much I did not
+really understand the structures of components and how they are made so through
+looking at examples from the OSU components and asking questions, I was able to
+learn more about the structure and what goes into making a component from
+scatch.
 
 > Finally, as a part of completing the portfolio project, to what extent has
 > your perspective of software development changed, if at all? In other words,
 > is software development something you still enjoy? If not, why not?
 
-<!-- TODO: discuss -->
+After completing this project, it gave me confidence that I enjoy software
+development and I am capable of pursuing this career. Before hand, I was still
+unsure if I enjoyed software development honestly or just convincing myself to
+like it because it was the major I chose as a senior in high school. This
+project did not feel like an assignment or another check box off my to-do list,
+but something I wanted to create and make better.
 
 > One of the challenges of completing the portfolio project is picking up a lot
 > of skills on your own. Some of these skills are, of course, software skills.
@@ -315,25 +332,49 @@ Take some time to fill them out honestly.
 > this process. Therefore, the first question is what skills did you pick up
 > through this process?
 
-<!-- TODO: discuss -->
+I think the software sequence truly equipped me with many skills that I applied
+to this project, but some skills/knowledge I picked up on throughout this
+project would be learning how to implement the three main methods that come with
+every component (transferFrom, clear, and newInstance). Prior to this project,
+I had a broad idea on how these methods were implemented. I also got more
+comfortable using Git and all the skills that came from that like making new
+branches, creating pull requests, etc.
 
 > The follow-up question is: could you rephrase these skills you picked up
 > as bullet points that you could put on a resume? Try it below.
 
-<!-- TODO: discuss -->
+- Intermediate experience using Git and Github to share code and communicate my work
+- Created a component that ressembles a music playlist and has similiar functions
+- Gained experience implementing core component methods in software development projects
 
 > Next, how has working on this project affected your career trajectory?
 > In other words, do you now hate the topic you picked? Or, are you even more
 > interested in it? Both outcomes are valuable to your personal development.
 
-<!-- TODO: discuss -->
+I am really happy with the topic I choose and I already have ideas on how to
+make it even better with additional methods and even altering current methods
+that can be implemented better. The project has strengthen my confidence in the
+career I want to pursue and sparked a large interest in learning more about
+software development and creating more projects.
 
 > Finally, consider the skills you've picked up and your current career
 > trajectory. What are some things you could do to continue on your
 > career trajectory? Also, who are some mentors you could contact to help
 > you stay on your path?
 
-<!-- TODO: discuss -->
+Completing this project has proven to myself that I am capable of creating
+projects from scratch. Although this project had plenty of guidence points
+throughout the process, I feel like I could pursue and complete more projects
+that will stregthen my knowledge and skill. I hope to continue to learn outside
+of the classroom and learn through working with software development instead of
+just reading or listening to lectures on it. Being hands-on has taught me so
+much more through mistakes and errors I encounted along the journey. As for
+mentors, I have always leaned towards upperclassmen who share my same interest/
+in the same major as guidence through my college journey since they have been
+through the same courses and I feel like their widsom and experience is very
+valuable. And of course after taking this course with Jeremy Grifski, I have
+found a great lecturer as a source for guidence. His warm welcoming attitude and
+passion to help students makes him a great person to turn for questions.
 
 ### Changelog
 
@@ -373,7 +414,6 @@ request merge (or at least tag your commits). This is not required.
 
 ### Submission
 
-<!-- TODO: read the submission instructions then delete this comment -->
 
 Assuming that your project is in a GitHub repo somewhere and your changes are on
 a proof-of-concept branch, then what we'll want you to do is create a pull
@@ -425,7 +465,6 @@ If you'd like to give feedback for this assignment (or any assignment, really),
 make use of [this survey][survey]. Your feedback helps make assignments
 better for future students.
 
-<!-- TODO: follow the link to share your feedback then delete this comment -->
 
 [markdown-to-pdf-guide]: https://therenegadecoder.com/blog/how-to-convert-markdown-to-a-pdf-3-quick-solutions/
 [survey]: https://forms.gle/dumXHo6A4Enucdkq9
