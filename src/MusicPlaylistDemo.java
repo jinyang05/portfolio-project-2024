@@ -1,4 +1,5 @@
 import components.MusicPlaylist.MusicPlaylist;
+import components.MusicPlaylist.MusicPlaylist1;
 import components.map.Map;
 
 /**
@@ -12,6 +13,7 @@ public class MusicPlaylistDemo {
      * @param args
      */
     public static void main(String[] args) {
+      
         // initalizing playlist
         MusicPlaylist fallPlaylist = new MusicPlaylist1();
 
