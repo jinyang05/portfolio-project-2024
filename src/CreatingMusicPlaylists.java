@@ -13,7 +13,7 @@ public class CreatingMusicPlaylists {
      */
     public static void main(String[] args) {
         // initalizing the music playlist
-        MusicPlaylist fallPlaylist = new MusicPlaylist();
+        MusicPlaylist fallPlaylist = new MusicPlaylist1();
 
         // adding songs
         fallPlaylist.add("No.1 Party Anthem", "Artic Monkeys");

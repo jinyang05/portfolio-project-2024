@@ -12,7 +12,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public final void testShuffleZero() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         MusicPlaylist nCopy = n;
         n.shuffle();
         assertEquals(nCopy, n);
@@ -24,7 +24,7 @@ public class MusicPlaylist1Test {
     @Test
     public final void testShuffleTwo() {
         boolean shuffled = false;
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         MusicPlaylist nCopy = n;
@@ -41,7 +41,7 @@ public class MusicPlaylist1Test {
     @Test
     public final void testShuffleMulitple() {
         boolean shuffled = false;
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Messy", "Lola Young");
@@ -58,7 +58,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testArtistOne() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         MusicPlaylist nCopy = n;
         String artist = n.artist("No. 1 Party Anthem");
@@ -71,7 +71,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testArtistTwo() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Self Control", "Frank Ocean");
         MusicPlaylist nCopy = n;
@@ -85,7 +85,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testArtistMultiple() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Messy", "Lola Young");
@@ -100,7 +100,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testUpNextOne() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         MusicPlaylist nCopy = n;
         String song = n.upNext();
@@ -113,7 +113,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testUpNextTwo() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         MusicPlaylist nCopy = n;
@@ -127,7 +127,7 @@ public class MusicPlaylist1Test {
      */
     @Test
     public void testUpNextMultiple() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Messy", "Lola Young");
