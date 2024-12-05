@@ -7,11 +7,20 @@ and this project adheres to [Calendar Versioning](https://calver.org/) of
 the following form: YYYY.0M.0D.
 
 
+## 2024.12.04
+
+### Added
+
+- Designed test suite for MusicPlaylist component
+- Designed two different use cases for MusicPlaylist component
+
+
 ## 2024.11.15
 
 ### Added
 
 - Designed kernel implementation for MusicPlaylist component
+
 
 ## 2024.11.14
 

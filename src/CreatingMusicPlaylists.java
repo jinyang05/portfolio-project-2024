@@ -1,5 +1,7 @@
 
 import components.MusicPlaylist.MusicPlaylist;
+
+import components.map.Map;
 import components.MusicPlaylist.MusicPlaylist1;
 
 /**
@@ -24,6 +26,26 @@ public class CreatingMusicPlaylists {
                 "Caroline Polachek");
         fallPlaylist.add("F2F", "SZA");
         fallPlaylist.add("Strawberry Blond", "Mitski");
+
+        // see what is playing next
+        System.out.println("The next song played is " + fallPlaylist.upNext());
+        // shuffle the order
+        fallPlaylist.shuffle();
+        // now see what is playing next
+        System.out.println("The next song played is " + fallPlaylist.upNext());
+
+        // check to see if a song should be added to avoid duplicates
+        if (fallPlaylist.contains("Messy")) {
+            System.out.println("the song is already added");
+        } else {
+            fallPlaylist.add("Messy", "Lola Young");
+        }
+
+        // see what is in your playlist
+        while (fallPlaylist.size() > 0) {
+            Map.Pair<String, String> removed = fallPlaylist.removeAny();
+            System.out.println(removed.key() + " by " + removed.value());
+        }
 
     }
 }

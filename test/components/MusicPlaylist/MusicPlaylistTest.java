@@ -21,7 +21,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testAddEmpty() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add(" ", " ");
         assertEquals(1, n.size());
     }
@@ -31,7 +31,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testAddSong() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", " ");
         assertEquals(1, n.size());
     }
@@ -41,7 +41,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testAddArtist() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add(" ", "Frank Ocean");
         assertEquals(1, n.size());
     }
@@ -51,7 +51,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testAddSongAndArtist() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         assertEquals(1, n.size());
     }
@@ -61,7 +61,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveEmpty() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         Map.Pair<String, String> nRemoved = n.remove("Self Control");
         String nSong = "Self Control";
@@ -76,7 +76,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveOne() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         Map.Pair<String, String> nRemoved = n.remove("Self Control");
@@ -93,7 +93,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveMultiple() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Messy", "Lola Young");
@@ -111,8 +111,8 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveAnyEmpty() {
-        MusicPlaylist n = new MusicPlaylist();
-        MusicPlaylist nTest = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
+        MusicPlaylist nTest = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         nTest.add("Self Control", "Frank Ocean");
         Map.Pair<String, String> nRemoved = n.removeAny();
@@ -127,8 +127,8 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveAnyOne() {
-        MusicPlaylist n = new MusicPlaylist();
-        MusicPlaylist nTest = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
+        MusicPlaylist nTest = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         nTest.add("Self Control", "Frank Ocean");
@@ -146,8 +146,8 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testRemoveAnyMultiple() {
-        MusicPlaylist n = new MusicPlaylist();
-        MusicPlaylist nTest = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
+        MusicPlaylist nTest = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         n.add("Messy", "Lola Young");
@@ -166,7 +166,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testContainsEmpty() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         MusicPlaylist nCopy = n;
         assertFalse(n.contains("Messy"));
         assertEquals(nCopy, n);
@@ -178,7 +178,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testContainsTrue() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         MusicPlaylist nCopy = n;
         assertTrue(n.contains("Self Control"));
@@ -190,7 +190,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testContainsFalse() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         MusicPlaylist nCopy = n;
         assertFalse(n.contains("Messy"));
@@ -202,7 +202,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testSizeEmpty() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         MusicPlaylist nCopy = n;
         assertEquals(0, n.size());
         assertEquals(nCopy, n);
@@ -213,7 +213,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testSizeOne() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         MusicPlaylist nCopy = n;
         assertEquals(1, n.size());
@@ -226,7 +226,7 @@ public abstract class MusicPlaylistTest {
      */
     @Test
     public final void testSizeMultiple() {
-        MusicPlaylist n = new MusicPlaylist();
+        MusicPlaylist n = new MusicPlaylist1();
         n.add("Self Control", "Frank Ocean");
         n.add("No. 1 Party Anthem", "Artic Monkeys");
         MusicPlaylist nCopy = n;
