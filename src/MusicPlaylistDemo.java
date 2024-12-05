@@ -1,4 +1,5 @@
 import components.MusicPlaylist.MusicPlaylist;
+import components.MusicPlaylist.MusicPlaylist1;
 import components.map.Map;
 
 /**
@@ -13,7 +14,7 @@ public class MusicPlaylistDemo {
      */
     public static void main(String[] args) {
         // initalizing variables
-        MusicPlaylist fallPlaylist = new MusicPlaylist();
+        MusicPlaylist fallPlaylist = new MusicPlaylist1();
         String addSong = "About You";
         String addArtist = "The 1975";
 
@@ -22,7 +23,7 @@ public class MusicPlaylistDemo {
 
         //removing a song
         Map.Pair<String, String> removed = fallPlaylist.remove("About You");
-        System.err.println("the song " + removed.key() + "by " + removed.value()
+        System.out.println("the song " + removed.key() + "by " + removed.value()
                 + "was removed!");
 
         // testing isEmpty()
